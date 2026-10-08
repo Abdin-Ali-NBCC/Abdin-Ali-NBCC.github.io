@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Your Name – Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&family=DM+Sans:opsz,wght@9..40,400;9..40,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <a class="logo" href="#board">Your Name</a>
+  <div class="ctrl">
+    <span class="swatches" role="group" aria-label="Board colour">
+      <button data-board="teal" aria-label="Teal board"></button>
+      <button data-board="plum" aria-label="Plum board"></button>
+      <button data-board="ink" aria-label="Ink board"></button>
+    </span>
+    <button class="pill" id="shuffle">Shuffle</button>
+    <button class="pill" id="tidy">Tidy up</button>
+  </div>
+</header>
+
+<main id="board" class="board">
+  <article class="note hello yellow" aria-label="Introduction">
+    <p class="small">Hi, I'm</p>
+    <h1 id="name">Your Name</h1>
+    <p class="lead">A one-sentence summary of what you do and who you do it for.</p>
+    <p class="hint">Drag the notes around. They're yours to rearrange.</p>
+  </article>
+
+  <article class="note photo white" aria-label="Photo"><div class="ph">Your photo</div></article>
+
+  <article class="note about blue" id="about">
+    <h2>About</h2>
+    <p>Write two or three short paragraphs here: who you are, what you're good at, and what you're looking for next.</p>
+  </article>
+
+  <article class="note skills pink">
+    <h2>Skills</h2>
+    <ul><li>Skill one</li><li>Skill two</li><li>Skill three</li><li>Skill four</li></ul>
+  </article>
+
+  <div id="projects" class="projects"></div>
+
+  <article class="note exp white" id="experience">
+    <h2>Experience</h2>
+    <ol>
+      <li><b>Role, Company</b><span>Start – Present</span></li>
+      <li><b>Role, Company</b><span>Start – End</span></li>
+      <li><b>Degree, School</b><span>Start – End</span></li>
+    </ol>
+  </article>
+
+  <article class="note contact mint" id="contact">
+    <h2>Say hello</h2>
+    <button class="mail" id="copy" title="Copy email address"></button>
+    <form id="form" novalidate>
+      <label>Name<input name="name" autocomplete="name" required></label>
+      <label>Email<input name="email" type="email" autocomplete="email" required></label>
+      <label>Message<textarea name="message" rows="3" required></textarea></label>
+      <button class="send" type="submit">Send message</button>
+      <p id="status" class="status" role="status"></p>
+    </form>
+    <p class="links" id="links"></p>
+  </article>
+</main>
+
+<footer>&copy; <span id="year">2026</span> Your Name</footer>
+<div class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
