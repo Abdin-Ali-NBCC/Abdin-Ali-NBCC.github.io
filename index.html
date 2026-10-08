@@ -3,70 +3,88 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#05060B">
 <title>Your Name – Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700;900&family=DM+Sans:opsz,wght@9..40,400;9..40,600&display=swap" rel="stylesheet">
+<meta name="description" content="Portfolio of Your Name.">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<canvas id="aura" aria-hidden="true"></canvas>
+
 <header class="bar">
-  <a class="logo" href="#board">Your Name</a>
-  <div class="ctrl">
-    <span class="swatches" role="group" aria-label="Board colour">
-      <button data-board="teal" aria-label="Teal board"></button>
-      <button data-board="plum" aria-label="Plum board"></button>
-      <button data-board="ink" aria-label="Ink board"></button>
+  <a class="logo" href="#top">Your Name</a>
+  <nav id="nav" aria-label="Main">
+    <a href="#about">About</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="tools">
+    <span class="swatches" role="group" aria-label="Aura colour">
+      <button data-aura="blue" aria-label="Blue aura"></button>
+      <button data-aura="violet" aria-label="Violet aura"></button>
+      <button data-aura="aqua" aria-label="Aqua aura"></button>
     </span>
-    <button class="pill" id="shuffle">Shuffle</button>
-    <button class="pill" id="tidy">Tidy up</button>
+    <button class="menu" id="menu" aria-label="Open menu" aria-expanded="false">Menu</button>
   </div>
 </header>
 
-<main id="board" class="board">
-  <article class="note hello yellow" aria-label="Introduction">
-    <p class="small">Hi, I'm</p>
-    <h1 id="name">Your Name</h1>
-    <p class="lead">A one-sentence summary of what you do and who you do it for.</p>
-    <p class="hint">Drag the notes around. They're yours to rearrange.</p>
-  </article>
+<main>
+  <section class="hero" id="top">
+    <p class="kicker"><span class="dot"></span><span id="status">Open to work</span></p>
+    <div class="hero-main">
+      <h1 id="name">Your Name</h1>
+      <div class="hero-side">
+        <p>A one-sentence summary of what you do and who you do it for.</p>
+        <a class="btn" href="#work">See my work</a><a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+  </section>
 
-  <article class="note photo white" aria-label="Photo"><div class="ph">Your photo</div></article>
-
-  <article class="note about blue" id="about">
+  <section id="about">
     <h2>About</h2>
-    <p>Write two or three short paragraphs here: who you are, what you're good at, and what you're looking for next.</p>
-  </article>
+    <div>
+      <p class="big">Write two or three short paragraphs here: who you are, what you're good at, and what you're looking for next.</p>
+      <ul class="skills" aria-label="Skills"><li>Skill one</li><li>Skill two</li><li>Skill three</li><li>Skill four</li></ul>
+    </div>
+  </section>
 
-  <article class="note skills pink">
-    <h2>Skills</h2>
-    <ul><li>Skill one</li><li>Skill two</li><li>Skill three</li><li>Skill four</li></ul>
-  </article>
+  <section id="work" class="wide">
+    <h2>Selected work</h2>
+    <div class="grid" id="projects"></div>
+  </section>
 
-  <div id="projects" class="projects"></div>
-
-  <article class="note exp white" id="experience">
+  <section id="experience">
     <h2>Experience</h2>
-    <ol>
-      <li><b>Role, Company</b><span>Start – Present</span></li>
-      <li><b>Role, Company</b><span>Start – End</span></li>
-      <li><b>Degree, School</b><span>Start – End</span></li>
-    </ol>
-  </article>
+    <ul class="exp">
+      <li><span class="when">Start – Present</span><div><b>Role, Company</b><p>What you did and what changed because of it.</p></div></li>
+      <li><span class="when">Start – End</span><div><b>Role, Company</b><p>What you did and what changed because of it.</p></div></li>
+      <li><span class="when">Start – End</span><div><b>Degree, School</b><p>Anything worth mentioning.</p></div></li>
+    </ul>
+  </section>
 
-  <article class="note contact mint" id="contact">
-    <h2>Say hello</h2>
-    <button class="mail" id="copy" title="Copy email address"></button>
-    <form id="form" novalidate>
-      <label>Name<input name="name" autocomplete="name" required></label>
-      <label>Email<input name="email" type="email" autocomplete="email" required></label>
-      <label>Message<textarea name="message" rows="3" required></textarea></label>
-      <button class="send" type="submit">Send message</button>
-      <p id="status" class="status" role="status"></p>
-    </form>
-    <p class="links" id="links"></p>
-  </article>
+  <section id="contact">
+    <h2>Contact</h2>
+    <div>
+      <button class="mail" id="copy" title="Copy email address"></button>
+      <p class="muted">Say what you're open to: jobs, freelance, collaborations.</p>
+      <form id="form" novalidate>
+        <label>Name<input name="name" autocomplete="name" required></label>
+        <label>Email<input name="email" type="email" autocomplete="email" required></label>
+        <label class="full">Message<textarea name="message" rows="4" required></textarea></label>
+        <div class="full"><button class="btn" type="submit">Send message</button><span class="fstatus" id="fstatus" role="status"></span></div>
+      </form>
+      <p class="links" id="links"></p>
+    </div>
+  </section>
 </main>
-
 <footer>&copy; <span id="year">2026</span> Your Name</footer>
+
+<dialog id="dlg" aria-labelledby="dt">
+  <button class="close" id="close" aria-label="Close">✕</button>
+  <p class="muted" id="dmeta"></p>
+  <h3 id="dt"></h3>
+  <p id="dd"></p>
+  <a class="btn" id="dlink" href="#" target="_blank" rel="noopener">View project</a>
+</dialog>
 <div class="toast" id="toast" role="status"></div>
 <script src="script.js"></script>
 </body>
