@@ -3,7 +3,10 @@ const CONFIG = {
   email: 'abdinawad42@gmail.com',
   status: 'Open to work',
   links: [
-    { label: 'LinkedIn', url: 'www.linkedin.com/in/abdin-ali-875869280' },
+    {
+      label: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/abdin-ali-875869280/',
+    },
     { label: 'GitHub', url: 'https://github.com/Abdin-Ali-NBCC' },
   ],
   projects: [
