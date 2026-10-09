@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#05060B" />
+    <title>Abdin Ali – Portfolio</title>
+    <meta
+      name="description"
+      content="Abdin Ali – IT Software Development student at NBCC Saint John, seeking a Software Developer co-op."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700&family=Hanken+Grotesk:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="aura" aria-hidden="true"></canvas>
+
+    <header class="bar">
+      <a class="logo" href="#top">Abdin Ali</a>
+      <nav id="nav" aria-label="Main">
+        <a href="#about">About</a><a href="#work">Work</a
+        ><a href="#experience">Experience</a><a href="#education">Education</a
+        ><a href="#volunteering">Volunteering</a><a href="#contact">Contact</a>
+      </nav>
+      <div class="tools">
+        <span class="swatches" role="group" aria-label="Aura colour">
+          <button data-aura="blue" aria-label="Blue aura"></button>
+          <button data-aura="violet" aria-label="Violet aura"></button>
+          <button data-aura="aqua" aria-label="Aqua aura"></button>
+        </span>
+        <button
+          class="menu"
+          id="menu"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          Menu
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <p class="kicker">
+          <span class="dot"></span><span id="status">Open to work</span>
+        </p>
+        <div class="hero-main">
+          <h1 id="name">Abdin Ali</h1>
+          <div class="hero-side">
+            <p>
+              IT Software Development student at NBCC Saint John, building apps
+              with C#, Java, JavaScript and SQL. Looking for a Software
+              Developer co-op.
+            </p>
+            <a class="btn" href="#work">See my work</a
+            ><a class="btn ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>About</h2>
+        <div>
+          <p class="big">
+            I'm a software development student at NBCC in Saint John who likes
+            turning ideas into working apps. I'm comfortable with C#, Java,
+            JavaScript and SQL, and I enjoy tracking down bugs and solving
+            problems along the way. Now I'm looking for a developer co-op where
+            I can learn from a team and add real value.
+          </p>
+          <ul class="skills" aria-label="Skills">
+            <li>C#</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>SQL / SQL Server</li>
+            <li>.NET &amp; Windows Forms</li>
+            <li>LINQ</li>
+            <li>Bash</li>
+            <li>HTML &amp; CSS</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>GitHub</li>
+            <li>Jira</li>
+            <li>Visual Studio &amp; IntelliJ</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="work" class="wide">
+        <h2>Selected work</h2>
+        <div class="grid" id="projects"></div>
+      </section>
+
+      <section id="experience">
+        <h2>Experience</h2>
+        <ul class="exp">
+          <li>
+            <span class="when">May 2026 – Present</span>
+            <div>
+              <b>Hardware Associate, Kent Building Supplies</b>
+              <p>
+                Saint John, NB. <br />
+                Help customers choose and find products, load and organize
+                building materials safely, and work with a team to receive and
+                stock merchandise.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="when">Dec 2025 – Oct 2026</span>
+            <div>
+              <b>Cashier, Atlantic Superstore</b>
+              <p>
+                Saint John, NB.<br />
+                Provide friendly checkout service, process cash, debit and
+                credit payments accurately, and balance the cash drawer.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="when">Sep 2023 – Apr 2025</span>
+            <div>
+              <b
+                >Automotive Assistant Technician, Upper Egypt Mechanic
+                Workshop</b
+              >
+              <p>
+                Cairo, Egypt. <br />Welcomed customers, processed invoices and
+                payments, changed engine oil, replaced brake pads, serviced
+                rotors and tires, and ordered spare parts.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <ul class="exp">
+          <li>
+            <span class="when">Feb 2026</span>
+            <div>
+              <b>Joint Health and Safety Committee (JHSC) Certificate</b>
+              <p>WorkSafeNB.</p>
+            </div>
+          </li>
+          <li>
+            <span class="when">Sep 2025 – Present</span>
+            <div>
+              <b>Diploma in IT Software Development, NBCC</b>
+              <p>New Brunswick Community College, Saint John, NB.</p>
+            </div>
+          </li>
+          <li>
+            <span class="when">Mar – Aug 2025</span>
+            <div>
+              <b>Front-End Training, GDG on Campus CIC Cairo</b>
+              <p>HTML, CSS, JavaScript and React. Cairo, Egypt.</p>
+            </div>
+          </li>
+          <li>
+            <span class="when">Oct 2022 – Jul 2023</span>
+            <div>
+              <b>Nanodegree Program, DECI L2 Cairo</b>
+              <p>
+                Python, HTML, intro to data analysis, embedded systems,
+                cybersecurity and circuits.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="when">Graduated Jul 2024</span>
+            <div>
+              <b>High School Diploma, Alaqbat High School</b>
+              <p>Cairo, Egypt.</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="volunteering">
+        <h2>Volunteering</h2>
+        <ul class="exp">
+          <li>
+            <span class="when">Oct 2025 – Present</span>
+            <div>
+              <b>Customer Service, YMCA Greater Saint John</b>
+              <p>
+                Membership desk. Greet members and visitors and keep check-in
+                running smoothly.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="when">Jul – Aug 2025</span>
+            <div>
+              <b>Classroom Assistant, YMCA Greater Saint John</b>
+              <p>
+                CLB classes. Supported instructors and gave students individual
+                help with English tasks.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="when">Jul – Aug 2025</span>
+            <div>
+              <b>Event Support, YMCA and Saint John Newcomers Centre</b>
+              <p>
+                Helped set up booths and materials, welcomed attendees and
+                guided them around busy events.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <div>
+          <button class="mail" id="copy" title="Copy email address"></button>
+          <p class="muted">
+            Open to a Software Developer co-op. Say hello, I reply quickly.
+          </p>
+          <form id="form" novalidate>
+            <label
+              >Name<input name="name" autocomplete="name" required
+            /></label>
+            <label
+              >Email<input
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+            /></label>
+            <label class="full"
+              >Message<textarea name="message" rows="4" required></textarea>
+            </label>
+            <div class="full">
+              <button class="btn" type="submit">Send message</button
+              ><span class="fstatus" id="fstatus" role="status"></span>
+            </div>
+          </form>
+          <p class="links" id="links"></p>
+        </div>
+      </section>
+    </main>
+    <footer>&copy; <span id="year">2026</span> Abdin Ali</footer>
+
+    <dialog id="dlg" aria-labelledby="dt">
+      <button class="close" id="close" aria-label="Close">✕</button>
+      <p class="muted" id="dmeta"></p>
+      <h3 id="dt"></h3>
+      <p id="dd"></p>
+      <a class="btn" id="dlink" href="#" target="_blank" rel="noopener"
+        >View project</a
+      >
+    </dialog>
+    <div class="toast" id="toast" role="status"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
