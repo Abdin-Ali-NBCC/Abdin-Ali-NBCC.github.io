@@ -1,6 +1,7 @@
 // ===== Edit your details here =====
 const CONFIG = {
   email: 'abdinawad42@gmail.com',
+  phone: '+1(506) 607-9130',
   status: 'Seeking a developer co-op',
   links: [
     { label: 'LinkedIn', url: 'https://linkedin.com/in/abdin-ali-875869280' },
@@ -13,7 +14,7 @@ const CONFIG = {
       summary:
         'A C# desktop app for managing vehicles, drivers and packages, backed by a database and text files.',
       details:
-        'Built with C# and Windows Forms using object-oriented programming: encapsulation, inheritance and polymorphism. It stores and manages application data with databases and text files.',
+        'Developed a fleet management desktop application using C# and Windows Forms as part of a team project. Worked on my assigned form, helped develop other forms, and implemented a login feature. Applied object-oriented programming concepts, including encapsulation, inheritance, and polymorphism, and worked with databases and text files to manage vehicles, drivers, and packages. Collaborated with teammates to connect the forms and integrate them into one application.',
       url: 'https://github.com/AleGau00273/OOP-Project',
     },
     {
@@ -22,7 +23,7 @@ const CONFIG = {
       summary:
         'A restaurant web app with meal filtering, a cart and mood-based meal suggestions.',
       details:
-        'Final team project for Google Developer Groups on Campus: CIC. Visitors can browse meals and desserts by category (breakfast, lunch, dinner, snacks, desserts), add items to a cart, and get meal suggestions based on their mood. Built with React, HTML, CSS and JavaScript, with 3D animations and a modern UI.',
+        'Developed MoodiMealz, a restaurant web application, as part of a team project for Google Developer Groups on Campus: CIC. Worked on several pages and helped teammates develop other parts of the application. The app allows users to browse meals and desserts by category, add items to a shopping cart, and receive meal suggestions based on their mood. Built using React, HTML, CSS, and JavaScript, with 3D animations and a modern user interface.',
       url: 'https://mai-mohamed3.github.io/MoodiMealz/',
     },
   ],
@@ -209,6 +210,7 @@ dlg.onclick = (e) => {
 
 // ---- Contact ----
 $('#copy').textContent = CONFIG.email;
+$('#phone').textContent = CONFIG.phone;
 $('#copy').onclick = () =>
   navigator.clipboard.writeText(CONFIG.email).then(
     () => toast('Email copied'),
