@@ -2,7 +2,7 @@
 const CONFIG = {
   email: 'abdinawad42@gmail.com',
   phone: '+1(506) 607-9130',
-  status: 'Seeking a developer co-op',
+  status: 'Seeking a software developer co-op',
   links: [
     { label: 'LinkedIn', url: 'https://linkedin.com/in/abdin-ali-875869280' },
     { label: 'GitHub', url: 'https://github.com/Abdin-Ali-NBCC' },
